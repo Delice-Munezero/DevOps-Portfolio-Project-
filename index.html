@@ -1,42 +1,372 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potfolio.com</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Delice Munezero is an Information Technology professional based in Kigali, Rwanda, with interests in software development, networking, databases, and IoT.">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Delice Munezero | Information Technology Professional</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Small additions for the content blocks used in this portfolio -->
+	<style>
+		section[id], div[id] { scroll-margin-top: 90px; }
+
+		/* Text logo */
+		.logo-text { font-size: 24px; font-weight: 700; letter-spacing: 1px; color: #fff; text-decoration: none; }
+		.header_area.navbar_fixed .logo-text { color: #222; }
+
+		/* Hero */
+		.banner_content .hero-description { max-width: 520px; margin: 20px 0 30px; }
+		.hero-social { margin-top: 30px; }
+		.hero-social a { font-size: 20px; margin-right: 18px; color: inherit; }
+		.hero-profile { text-align: center; }
+		.hero-profile img { width: 100%; max-width: 360px; border-radius: 50%; }
+		.hero-profile h4 { margin-top: 20px; color: inherit; }
+		.hero-profile p { margin: 0; }
+
+		/* About */
+		.about_area .about_lead { font-size: 18px; font-weight: 500; }
+		.about-stats { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px; }
+		.about-stats h3 { margin: 0; font-size: 22px; }
+		.about-stats p { margin: 0; }
+		.about-card { padding: 40px 30px; text-align: center; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0, 0, 0, .06); }
+		.about-card i { font-size: 48px; margin-bottom: 20px; display: block; }
+		.about-card h3 { margin-bottom: 15px; }
+
+		/* Skills */
+		.feature_item i { font-size: 48px; display: block; margin-bottom: 20px; }
+
+		/* Projects */
+		.project_card { height: 100%; padding: 35px 30px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0, 0, 0, .06); background: #fff; }
+		.project_card .project_icon i { font-size: 40px; margin-bottom: 20px; display: block; }
+		.project_card h4 { margin-bottom: 12px; }
+		.project_tags { margin: 18px 0; }
+		.project_tags span { display: inline-block; margin: 0 6px 6px 0; padding: 3px 12px; border: 1px solid #ddd; border-radius: 20px; font-size: 13px; }
+		.project_card .project_link i { margin-left: 6px; }
+		.projects_grid > div { margin-bottom: 30px; }
+
+		/* Contact */
+		.contact_label { margin-bottom: 10px; letter-spacing: 2px; }
+		.subscription_box .primary_btn { display: inline-block; margin-top: 25px; }
+	</style>
 </head>
+
 <body>
-    <p>
-       <marquee behavior="" direction=""> <h2>MY POTFOLIO</h2></marquee> 
-    </p>
-    <ol>
-        <li>ABOUT ME
-            <UL>
-                <li>Picture</li>
-                <li>NAMES </li>
-                <li>Email Address</li>
-                </UL>
-        </li>
-    
-        <li>PROJECTS
-            <UL>
-                <li>LIST VS Images thumbnails (Design)</li>
-                <li>Details</li>
-                </UL>
-        </li>
-    
-        <li> EDUCATION
-            <UL>
-                <li>Degrees</li>
-                <li>certifiactes </li>
-                <li>span</li>
-                </UL>
-        </li>
-    
-    
-        </li>
-    </ol>
-    <hr>
-    WELCOME THEN <a href="#">Next</a>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="#home"><span class="logo-text">DELICE.</span></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links and anchor them to sections on this page -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area" id="home">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hello, I'm</h3>
+							<h1 class="text-uppercase">Delice Munezero</h1>
+							<h5 class="text-uppercase">IT Professional &amp; Technology Educator</h5>
+							<p class="hero-description">
+								I develop practical technology solutions and share what I learn across software,
+								databases, networking, IoT, and embedded systems.
+							</p>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="#projects"><span>View My Projects</span></a>
+								<a class="primary_btn tr-bg" href="#contact"><span>Contact Me</span></a>
+							</div>
+							<div class="hero-social">
+								<a href="https://github.com/Delice-Munezero/projectpotfolio" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository"><i class="fa fa-github"></i></a>
+								<a href="mailto:munezerodelice205@gmail.com" aria-label="Email Delice Munezero"><i class="fa fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img hero-profile">
+							<img src="" alt="Portrait of Delice Munezero">
+							<h4>Delice Munezero</h4>
+							<p>Information Technology Professional · Kigali, Rwanda</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap" id="about">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about-card">
+						<i class="fa fa-lightbulb-o"></i>
+						<h3>Learning, Building &amp; Sharing</h3>
+						<p>
+							Developing practical technology that solves real-world problems
+							and improves efficiency for organizations and communities.
+						</p>
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>About <br> Me</h2>
+						<p class="about_lead">
+							I am Delice Munezero, an Information Technology professional based in Kigali, Rwanda.
+						</p>
+						<p>
+							I hold an Advanced Diploma (A1) in Information Technology from Tumba College of Technology
+							and am currently completing a Bachelor of Technology in Information Technology at SJITC Nyamirambo.
+						</p>
+						<p>
+							My experience in the ICT and multimedia sector includes education and practical technology development. I have worked
+							with students and learners in programming, database management, networking, IoT, Linux
+							administration, cloud computing, and web development.
+						</p>
+						<div class="about-stats">
+							<div>
+								<h3>BTech</h3>
+								<p>In progress</p>
+							</div>
+							<div>
+								<h3>A1</h3>
+								<p>IT Diploma</p>
+							</div>
+							<div>
+								<h3>Kigali</h3>
+								<p>Rwanda</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!--================ Start Features Area (Skills) =================-->
+	<section class="features_area" id="skills">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>Technical Skills</h2>
+						<p>My Expertise</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<i class="fa fa-code"></i>
+						<h4>Software Development</h4>
+						<p>PHP, Python, C, C++, HTML, CSS, JavaScript, web and database applications</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<i class="fa fa-database"></i>
+						<h4>Databases</h4>
+						<p>MySQL, NoSQL, database design, SQL queries, relationships and CRUD operations</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<i class="fa fa-sitemap"></i>
+						<h4>Networking</h4>
+						<p>Cisco, VLANs, RIP v2, routing, DHCP, NAT, ACLs, subnetting, VLSM, IPv4/IPv6 and troubleshooting</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<i class="fa fa-microchip"></i>
+						<h4>IoT &amp; Embedded Systems</h4>
+						<p>Arduino, ESP32/CAM, sensors, actuators, microcontrollers, displays and automation</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 text-center">
+					<p>
+						<strong>Tools:</strong> Git, GitHub, Visual Studio Code, XAMPP, Cisco Packet Tracer,
+						Proteus, Tinkercad, EasyEDA and Figma.
+						<strong>Operating systems:</strong> Windows and Linux.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	<!--================ Start Projects Area =================-->
+	<section class="portfolio_area section_gap_bottom" id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Featured Projects</h2>
+						<p>Selected Software, IoT &amp; Networking Work</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row projects_grid">
+				<div class="col-lg-4 col-md-6">
+					<div class="project_card">
+						<div class="project_icon"><i class="fa fa-id-card-o"></i></div>
+						<h4>Smart Student Identification Card</h4>
+						<p>An IoT-based project exploring more efficient student identification and student information management.</p>
+						<div class="project_tags"><span>IoT</span><span>RFID</span><span>Database</span><span>Web</span></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="project_card">
+						<div class="project_icon"><i class="fa fa-ambulance"></i></div>
+						<h4>Accident Detection &amp; Emergency Alert</h4>
+						<p>A system concept to detect vehicle accidents, determine severity, obtain location, and notify emergency contacts.</p>
+						<div class="project_tags"><span>IoT</span><span>Sensors</span><span>GPS</span><span>GSM</span></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="project_card">
+						<div class="project_icon"><i class="fa fa-thermometer-half"></i></div>
+						<h4>Smart Room Temperature Controller</h4>
+						<p>An embedded controller that monitors room temperature and operates a fan or heating device at defined thresholds.</p>
+						<div class="project_tags"><span>ATmega</span><span>Embedded C</span><span>LCD</span></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="project_card">
+						<div class="project_icon"><i class="fa fa-heartbeat"></i></div>
+						<h4>IoT Alcohol &amp; Health Monitoring</h4>
+						<p>A sensor-based monitoring project that displays readings and uses indicators to alert when a condition is detected.</p>
+						<div class="project_tags"><span>Arduino</span><span>Sensors</span><span>LCD</span><span>IoT</span></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="project_card">
+						<div class="project_icon"><i class="fa fa-random"></i></div>
+						<h4>Traffic Light Control System</h4>
+						<p>A microcontroller project that controls red, yellow and green traffic lights according to timed intervals.</p>
+						<div class="project_tags"><span>Arduino</span><span>LEDs</span><span>C/C++</span></div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="project_card">
+						<div class="project_icon"><i class="fa fa-sitemap"></i></div>
+						<h4>Networking Projects</h4>
+						<p>Practical network configuration and troubleshooting, including inter-VLAN connectivity and IP services.</p>
+						<div class="project_tags"><span>VLANs</span><span>Routing</span><span>DHCP</span><span>Cisco</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Projects Area =================-->
+
+	<!--================ Start Contact Area =================-->
+	<section class="newsletter_area" id="contact">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<p class="text-white text-uppercase contact_label">Get in touch</p>
+						<h2 class="text-uppercase text-white">Let's Connect</h2>
+						<p class="text-white">
+							Delice Munezero · Kigali, Rwanda<br>
+							<a class="text-white" href="mailto:munezerodelice205@gmail.com">munezerodelice205@gmail.com</a>
+							&nbsp;|&nbsp;
+							<a class="text-white" href="tel:+250784590584">+250 784 590 584</a>
+						</p>
+						<a class="primary_btn" href="mailto:munezerodelice205@gmail.com"><span><i class="fa fa-envelope"></i> Email Me</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Contact Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#home"><span class="logo-text" style="color:#fff;">DELICE.</span></a>
+							<h4>Connect With Me</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://github.com/Delice-Munezero/projectpotfolio" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository"><i class="fa fa-github"></i></a>
+							<a href="mailto:munezerodelice205@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+							<a href="tel:+250784590584" aria-label="Phone"><i class="fa fa-phone"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					&copy; 2026 Delice Munezero. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
 </body>
+
 </html>
