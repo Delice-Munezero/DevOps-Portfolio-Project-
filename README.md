@@ -446,8 +446,8 @@ The detailed license information is available in the:
 
 file included in this repository.
 
-## Contributors
-
+## Contributorsgit 
+- Dorah Nalwanyiri
 ### Delice Munezero
 
 * Project development
